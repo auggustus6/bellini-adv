@@ -19,6 +19,7 @@ export default {
     primary: "#5b1e17",
     secondaryMedium: "#ffffff",
     darkBlack: "#242428",
+    colorHome: "#EDE2D0",
     white: "#FFF",
   },
 } as const;

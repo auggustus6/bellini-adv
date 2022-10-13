@@ -7,6 +7,14 @@ export const Nav = styled.nav`
       align-items: center;
     }
 
+    ul li:last-child a {
+      padding: 1.2rem 2.4rem;
+      background: #242428;
+      border-radius: 37px;
+      color: ${theme.colors.white};
+      letter-spacing: -0.035em;
+    }
+
     li {
       list-style: none;
     }

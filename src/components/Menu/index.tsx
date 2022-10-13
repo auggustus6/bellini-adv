@@ -21,6 +21,9 @@ const Menu = ({ expanded }: IconMenuProps) => {
         <li>
           <a href="#">Cultural</a>
         </li>
+        <li>
+          <a href="#">Contato</a>
+        </li>
       </ul>
     </Styles.Nav>
   );

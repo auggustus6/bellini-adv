@@ -10,8 +10,8 @@ const Header = () => {
 
   return (
     <Styles.Header>
-      <Container>
-        <Styles.Content color="red">
+      <Container> 
+        <Styles.Content>
           <Logo />
           <Menu expanded={isOpen} />
           <IconMenu onClick={() => setIsOpen(!isOpen)} expanded={isOpen} />
