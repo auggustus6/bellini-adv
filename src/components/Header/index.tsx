@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <Styles.Header>
-      <Container> 
+      <Container>
         <Styles.Content>
           <Logo />
           <Menu expanded={isOpen} />
