@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     }
 
     ul li:last-child a {
-  padding: 1rem 2rem;
+      padding: 1rem 2rem;
       background: #242428;
       border-radius: 37px;
       color: ${theme.colors.white};

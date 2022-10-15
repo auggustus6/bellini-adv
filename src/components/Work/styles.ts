@@ -14,7 +14,7 @@ export const ContainerWork = styled.div`
       margin-bottom: 5rem;
     }
 
-    @media (max-width: 930px){
+    @media (max-width: 930px) {
       h1 {
         text-align: center;
       }
