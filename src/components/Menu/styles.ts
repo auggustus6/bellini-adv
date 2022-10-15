@@ -8,11 +8,10 @@ export const Nav = styled.nav`
     }
 
     ul li:last-child a {
-      padding: 1.2rem 2.4rem;
+  padding: 1rem 2rem;
       background: #242428;
       border-radius: 37px;
       color: ${theme.colors.white};
-      letter-spacing: -0.035em;
     }
 
     li {
@@ -31,7 +30,7 @@ export const Nav = styled.nav`
       line-height: 2.4;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       ul {
         flex-direction: column;
         position: absolute;

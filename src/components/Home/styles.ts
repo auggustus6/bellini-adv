@@ -18,7 +18,6 @@ export const ContainerHome = styled.div`
 
     h1 {
       font-size: 7.2rem;
-      line-height: 7.4rem;
       font-weight: 300;
       color: ${theme.colors.darkBlack};
       margin-bottom: 1.6rem;
@@ -29,10 +28,46 @@ export const ContainerHome = styled.div`
       font-size: 3.2rem;
       line-height: 39px;
       color: ${theme.colors.darkBlack};
+      margin-bottom: 4rem;
+    }
+
+    a {
+      padding: 1.2rem 2.4rem;
+      background: ${theme.colors.darkBlack};
+      border-radius: 37px;
+      color: ${theme.colors.white};
+    }
+
+    @media (max-width: 1030px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 2rem;
+
+      img {
+        width: 50rem;
+        margin-top: 4rem;
+      }
+
+      h1 {
+        font-size: 5.2rem;
+      }
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      p {
+        font-size: 2.2rem;
+      }
     }
   `}
 `;
 
-export const ContantInfo = styled.div``;
+export const ContantInfo = styled.div`
+  padding: 2rem 0 2rem;
+`;
 
 export const ContantImg = styled.div``;

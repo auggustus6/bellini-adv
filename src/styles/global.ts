@@ -18,6 +18,7 @@ const GlobalStyles: GlobalStyleComponent<
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      overflow-x: hidden;
       text-decoration: none;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;

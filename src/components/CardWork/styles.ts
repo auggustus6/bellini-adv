@@ -2,12 +2,28 @@ import styled, { css } from "styled-components";
 
 export const Card = styled.div`
   max-width: 31rem;
+  display: flex;
+
+  @media (max-width: 660px) {
+    max-width: 20rem;
+    height: 26rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 440px) {
+    max-width: 38rem;
+    border: 2px solid #242428;
+    padding: 1rem;
+    border-radius: 5px;
+  }
 `;
 
-export const CardContent = styled.footer`
+export const CardContent = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     img {
       width: 6rem;
@@ -34,6 +50,29 @@ export const CardContent = styled.footer`
       color: ${theme.colors.darkBlack};
       font-weight: 700;
       font-size: 1.8rem;
+      text-align: center;
+    }
+
+    @media (max-width: 660px) {
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+
+      a {
+        font-size: 1.4rem;
+        max-width: 12rem;
+        border-radius: 30px;
+        padding: 0.6rem 1.4rem;
+      }
     }
   `}
 `;

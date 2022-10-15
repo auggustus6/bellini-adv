@@ -47,7 +47,7 @@ export const Icon = styled.div`
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 920px) {
       display: none;
     }
   `}
