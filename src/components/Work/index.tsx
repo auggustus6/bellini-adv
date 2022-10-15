@@ -1,4 +1,4 @@
-import CardWork from "../CardWork/CardWork";
+import CardWork from "../../components/CardWork";
 import * as Styles from "./styles";
 
 const Work = () => {

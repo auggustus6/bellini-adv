@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container } from "../Container/styles";
 import Logo from "../Logo";
 import Menu from "../Menu";

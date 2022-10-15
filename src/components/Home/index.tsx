@@ -10,7 +10,7 @@ const Home = () => {
           <a href="#">Fazer contato</a>
         </Styles.ContantInfo>
         <Styles.ContantImg>
-          <img src="../../../img/Home.svg" alt="Imagem advogada Laura Bellini" />
+          <img src="../../../img/Home.svg" alt="" />
         </Styles.ContantImg>
       </Styles.ContainerHome>
     </Styles.StylesHome>
