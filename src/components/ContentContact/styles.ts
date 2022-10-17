@@ -36,7 +36,7 @@ export const ContainerContact = styled.div`
 export const Box = styled.div`
   display: flex;
   margin-top: 7rem;
-  gap: 20rem;
+  justify-content: space-between;
 `;
 
 export const Item = styled.div`
