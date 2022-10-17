@@ -4,6 +4,7 @@ import Home from "../../components/Home/";
 import * as Styles from "./styles";
 import Work from "../../components/Work";
 import About from "../../components/About";
+import ContentContact from "../../components/ContentContact";
 
 const HomeTemplate = () => {
   return (
@@ -12,6 +13,7 @@ const HomeTemplate = () => {
         <Home />
         <Work />
         <About />
+        <ContentContact />
       </Styles.ContainerMain>
     </Layout>
   );
