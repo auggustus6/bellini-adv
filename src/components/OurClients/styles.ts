@@ -15,12 +15,14 @@ export const ContainerClients = styled.div`
   h4 {
     font-size: 2.4rem;
     color: ${theme.colors.darkBlack};
+    margin-bottom: 1rem;
   }
 
   h1 {
     font-size: 4.8rem;
     color: ${theme.colors.darkBlack};
     font-weight: 400;
+    margin-bottom: 2rem;
   }
 
   p {
