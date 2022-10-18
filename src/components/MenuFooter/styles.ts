@@ -21,8 +21,7 @@ export const NavFooter = styled.div`
 
     ul li a {
       color: ${theme.colors.darkBlack};
-      font-weight: bold;
-      
+      font-weight: 700;
     }
   `}
 `;
