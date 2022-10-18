@@ -4,6 +4,10 @@ import theme from "../../styles/theme";
 export const StylesHome = styled.div`
   ${() => css`
     background: ${theme.colors.colorHome};
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   `}
 `;
 
@@ -46,7 +50,7 @@ export const ContainerHome = styled.div`
       padding-top: 2rem;
 
       img {
-        width: 50rem;
+        max-width: 100%;
         margin-top: 4rem;
       }
 

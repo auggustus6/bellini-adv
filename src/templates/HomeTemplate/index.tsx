@@ -5,6 +5,7 @@ import * as Styles from "./styles";
 import Work from "../../components/Work";
 import About from "../../components/About";
 import ContentContact from "../../components/ContentContact";
+import OurClientes from "../../components/OurClients";
 
 const HomeTemplate = () => {
   return (
@@ -14,6 +15,7 @@ const HomeTemplate = () => {
         <Work />
         <About />
         <ContentContact />
+        <OurClientes/>
       </Styles.ContainerMain>
     </Layout>
   );

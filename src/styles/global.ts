@@ -18,26 +18,44 @@ const GlobalStyles: GlobalStyleComponent<
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      overflow-x: hidden;
       text-decoration: none;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-  
+
       &::before,
       &::after {
         box-sizing: inherit;
       }
     }
-  
-    ${({ theme }) => css`
-      html {
-        font-size: 62.5%;
-      }
 
-      body {
+.swiper {
+  padding: 3.2rem 0 3.2rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: #242428;
+}
+
+.swiper-button-prev {
+  color: #242428;
+}
+
+.swiper-button-next {
+  color: #242428;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+    ${({ theme }) => css` body {
         background: ${theme.colors.white};
         font-family: ${theme.font.family};
-        font-size: ${theme.font.sizes.medium};
     `}
   `;
 

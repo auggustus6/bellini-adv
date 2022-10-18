@@ -33,7 +33,7 @@ export const Nav = styled.nav`
     @media screen and (max-width: 920px) {
       ul {
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         left: -100rem;
         top: 0;
 

@@ -4,13 +4,13 @@ import theme from "../../styles/theme";
 export const StylesAbout = styled.div`
   ${() => css`
     background: ${theme.colors.colorHome};
+    width: 100%;
   `}
 `;
 
 export const ContainerAbout = styled.div`
   ${() => css`
     max-width: 140rem;
-    width: 100%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@ export const ContainerAbout = styled.div`
     flex-direction: column;
 
     img {
-      width: 50rem;
+      max-width: 100%;
     }
   }
 `;

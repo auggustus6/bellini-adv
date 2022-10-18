@@ -8,12 +8,24 @@ export const Footer = styled.footer`
     div {
       display: flex;
     }
+
+    @media (max-width: 500px) {
+      div {
+        align-items: center;
+        justify-content: center;
+      }
+    }
   `}
 `;
 
 export const ContainerFooter = styled.div`
   display: flex;
   gap: 10rem;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const AboutContent = styled.div`

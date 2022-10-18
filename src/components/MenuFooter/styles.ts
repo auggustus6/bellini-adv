@@ -13,6 +13,8 @@ export const NavFooter = styled.div`
 
     ul li {
       margin-bottom: 1.6rem;
+      list-style: none;
+      cursor: pointer;
     }
 
     ul li:last-child {
@@ -20,8 +22,15 @@ export const NavFooter = styled.div`
     }
 
     ul li a {
+      font-size: 1.6rem;
       color: ${theme.colors.darkBlack};
       font-weight: 700;
+    }
+
+    @media (max-width: 500px) {
+      ul {
+        text-align: center;
+      }
     }
   `}
 `;
