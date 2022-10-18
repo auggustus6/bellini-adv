@@ -15,9 +15,6 @@ const MenuFooter = () => {
           <a href="#">Serviços</a>
         </li>
         <li>
-          <a href="#">Contato</a>
-        </li>
-        <li>
           <a href="#">Cultural</a>
         </li>
         <li>
