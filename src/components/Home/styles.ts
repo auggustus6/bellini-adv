@@ -4,16 +4,13 @@ import theme from "../../styles/theme";
 export const StylesHome = styled.div`
   ${() => css`
     background: ${theme.colors.colorHome};
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   `}
 `;
 
 export const ContainerHome = styled.div`
   ${() => css`
     max-width: 140rem;
+    padding: 20rem 0 10rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -47,7 +44,7 @@ export const ContainerHome = styled.div`
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding-top: 2rem;
+      padding-top: 10rem;
 
       img {
         max-width: 100%;
@@ -58,7 +55,7 @@ export const ContainerHome = styled.div`
         font-size: 5.2rem;
       }
     }
-    @media (max-width: 500px) {
+    @media (max-width: 500px) 
       h1 {
         font-size: 3.2rem;
       }
@@ -74,4 +71,6 @@ export const ContantInfo = styled.div`
   padding: 2rem 0 2rem;
 `;
 
-export const ContantImg = styled.div``;
+export const ContantImg = styled.div`
+  display: flex;
+`;

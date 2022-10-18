@@ -4,7 +4,7 @@ export const ContainerWork = styled.div`
   ${() => css`
     max-width: 140rem;
     margin: 0 auto;
-    padding: 5rem 0 5rem;
+    padding: 10rem 0 10rem;
 
     h1 {
       font-weight: 400;

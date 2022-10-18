@@ -10,7 +10,7 @@ export const StylesClients = styled.div`
 export const ContainerClients = styled.div`
   max-width: 140rem;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding: 10rem 0 5rem;
 
   h4 {
     font-size: 2.4rem;

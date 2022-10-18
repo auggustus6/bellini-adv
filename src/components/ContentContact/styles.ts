@@ -12,7 +12,7 @@ export const ContainerContact = styled.div`
     max-width: 140rem;
     width: 100%;
     margin: 0 auto;
-    padding: 5rem 0 5rem;
+    padding: 10rem 0 10rem;
 
     h4 {
       color: ${theme.colors.white};
@@ -30,6 +30,10 @@ export const ContainerContact = styled.div`
       color: ${theme.colors.white};
       font-size: 2rem;
     }
+
+    @media (max-width: 500px) {
+      text-align: center;
+    }
   `}
 `;
 
@@ -37,6 +41,12 @@ export const Box = styled.div`
   display: flex;
   margin-top: 7rem;
   justify-content: space-between;
+
+  @media (max-width: 740px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
 `;
 
 export const Item = styled.div`
@@ -49,5 +59,9 @@ export const Item = styled.div`
 
   p:last-child {
     font-size: 4.8rem;
+  }
+
+  @media (max-width: 740px) {
+    margin-bottom: 3rem;
   }
 `;
