@@ -6,7 +6,13 @@ import CommnetCard from "../CommentCard";
 const OurClientes = () => {
   const settings: SwiperProps = {
     spaceBetween: 10,
-    slidesPerView: 3,
+    slidesPerView: 1,
+    loop: true,
+    breakpoints: {
+      500: {
+        slidesPerView: 3,
+      },
+    },
     pagination: {
       clickable: true,
     },
