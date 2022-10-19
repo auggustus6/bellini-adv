@@ -3,7 +3,7 @@ import theme from "../../styles/theme";
 
 export const StylesAbout = styled.div`
   ${() => css`
-    background: ${theme.colors.colorHome};
+    background: ${theme.colors.colorAbout};
     width: 100%;
   `}
 `;

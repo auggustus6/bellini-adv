@@ -6,6 +6,7 @@ import Work from "../../components/Work";
 import About from "../../components/About";
 import ContentContact from "../../components/ContentContact";
 import OurClientes from "../../components/OurClients";
+import BlogSection from "../../components/BlogSection";
 
 const HomeTemplate = () => {
   return (
@@ -15,7 +16,8 @@ const HomeTemplate = () => {
         <Work />
         <About />
         <ContentContact />
-        <OurClientes/>
+        <OurClientes />
+        <BlogSection />
       </Styles.ContainerMain>
     </Layout>
   );

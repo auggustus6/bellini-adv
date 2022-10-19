@@ -20,6 +20,7 @@ export default {
     secondaryMedium: "#ffffff",
     darkBlack: "#242428",
     colorHome: "#EDE2D0",
+    colorAbout: "#F6F1E8",
     white: "#FFF",
   },
 } as const;
