@@ -21,7 +21,6 @@ const GlobalStyles: GlobalStyleComponent<
       text-decoration: none;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-
       &::before,
       &::after {
         box-sizing: inherit;
