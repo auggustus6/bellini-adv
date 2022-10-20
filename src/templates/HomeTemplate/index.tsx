@@ -7,6 +7,7 @@ import About from "../../components/About";
 import ContentContact from "../../components/ContentContact";
 import OurClientes from "../../components/OurClients";
 import BlogSection from "../../components/BlogSection";
+import Form from "../../components/Form";
 
 const HomeTemplate = () => {
   return (
@@ -16,6 +17,7 @@ const HomeTemplate = () => {
         <Work />
         <About />
         <ContentContact />
+        <Form />
         <OurClientes />
         <BlogSection />
       </Styles.ContainerMain>
