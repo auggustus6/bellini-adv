@@ -10,7 +10,9 @@ const CardBlog = ({ img, title, p }: PropsCardBlog) => {
   return (
     <Styles.CardBlog>
       <img src={img} alt="" />
-      <h2>{title}</h2>
+      <Styles.Content>
+        <h2>{title}</h2>
+      </Styles.Content>
       <p>{p}</p>
     </Styles.CardBlog>
   );

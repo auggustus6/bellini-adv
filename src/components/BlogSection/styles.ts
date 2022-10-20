@@ -6,13 +6,39 @@ export const StylesBlog = styled.div`
   `}
 `;
 
+export const ContainerCard = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+
+  @media (max-width: 1048px) {
+    flex-direction: column;
+  }
+`;
+
 export const ContainerBlog = styled.div`
+  ${({ theme }) => css`
   max-width: 140rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 10rem 0 10rem;
+
+  a {
+    color: ${theme.colors.darkBlack};
+    padding: 1.2rem 2.4rem;
+    border: 2px solid ${theme.colors.darkBlack};
+    border-radius: 37px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+  }
+
+  a:hover {
+    opacity: .8;
+  }
 
   h4 {
     font-size: 2.4rem;
@@ -22,10 +48,6 @@ export const ContainerBlog = styled.div`
   h1 {
     font-size: 4.8rem;
     font-weight: 400;
-  }
-`;
-
-export const ContainerCard = styled.div`
-  display: flex;
-  gap: 3rem;
+    margin-bottom: 4.8rem;
+  `}
 `;

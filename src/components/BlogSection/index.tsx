@@ -24,6 +24,7 @@ const BlogSection = () => {
             p="15 de setembro de 2022"
           />
         </Styles.ContainerCard>
+        <a href="#">Mais notícias</a>
       </Styles.ContainerBlog>
     </Styles.StylesBlog>
   );
