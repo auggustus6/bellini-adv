@@ -21,6 +21,7 @@ export const Footer = styled.footer`
 export const ContainerFooter = styled.div`
   display: flex;
   gap: 10rem;
+  padding-top: 10rem;
 
   @media (max-width: 500px) {
     flex-direction: column;
