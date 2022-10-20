@@ -6,6 +6,7 @@ export const ContainerMain = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
+
 `;
 
 export const ContainerForm = styled.div`
