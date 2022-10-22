@@ -11,26 +11,66 @@ export const ContainerMain = styled.div`
 export const FormRow = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5rem;
 `;
 export const ContainerInputs = styled.div`
   display: flex;
   margin-top: 3rem;
+  flex-direction: column;
   gap: 2rem;
 `;
 
 export const ContentOne = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 50%;
+  gap: 1rem;
+
+  input {
+    width: 28rem;
+  }
+
+  @media (max-width: 700px) {
+    input {
+      width: 24rem;
+    }
+  }
+
+  @media (max-width: 610px) {
+    input {
+      width: 18rem;
+    }
+  }
+
+  @media (max-width: 482px) {
+    input {
+      width: 13rem;
+    }
+  }
 `;
 
 export const ContentTwo = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 50%;
+  gap: 1rem;
+
+  input {
+    width: 28rem;
+  }
+
+  @media (max-width: 700px) {
+    input {
+      width: 24rem;
+    }
+  }
+
+  @media (max-width: 610px) {
+    input {
+      width: 18rem;
+    }
+  }
+
+  @media (max-width: 482px) {
+    input {
+      width: 13rem;
+    }
+  }
 `;
 
 export const ContainerTextArea = styled.div`
@@ -73,6 +113,10 @@ export const ContainerForm = styled.div`
       opacity: 0.9;
     }
 
+    @media (max-width: 700px) {
+      width: 85%;
+    }
+
     @media (max-width: 510px) {
       width: 85%;
     }
@@ -85,7 +129,6 @@ export const ContainerForm = styled.div`
   .error {
     color: red;
     font-size: 1rem;
-    margin-top: 0.3rem;
   }
 
   .disabled-btn {
@@ -95,7 +138,10 @@ export const ContainerForm = styled.div`
 `;
 
 export const FormContact = styled.div`
-  width: 100%;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
 
   p {
     max-width: 59rem;

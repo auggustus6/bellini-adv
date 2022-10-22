@@ -77,24 +77,6 @@ const ContactForm = () => {
                       </Styles.FormRow>
                       <Styles.FormRow>
                         <Field
-                          type="text"
-                          placeholder="Civil"
-                          name="civil"
-                          id="civil"
-                          className={
-                            errors.civil && touched.civil ? "input-error" : null
-                          }
-                        />
-                        <ErrorMessage
-                          name="civil"
-                          component="span"
-                          className="error"
-                        />
-                      </Styles.FormRow>
-                    </Styles.ContentOne>
-                    <Styles.ContentTwo>
-                      <Styles.FormRow>
-                        <Field
                           placeholder="Telefone*"
                           type="text"
                           name="phoneNumber"
@@ -107,6 +89,24 @@ const ContactForm = () => {
                         />
                         <ErrorMessage
                           name="phoneNumber"
+                          component="span"
+                          className="error"
+                        />
+                      </Styles.FormRow>
+                    </Styles.ContentOne>
+                    <Styles.ContentTwo>
+                      <Styles.FormRow>
+                        <Field
+                          type="text"
+                          placeholder="Civil"
+                          name="civil"
+                          id="civil"
+                          className={
+                            errors.civil && touched.civil ? "input-error" : null
+                          }
+                        />
+                        <ErrorMessage
+                          name="civil"
                           component="span"
                           className="error"
                         />
