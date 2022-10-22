@@ -17,7 +17,6 @@ const HomeTemplate = () => {
         <Work />
         <About />
         <ContentContact />
-        {/* <Form /> */}
         <ContactForm />
         <OurClientes />
         <BlogSection />

@@ -8,6 +8,46 @@ export const ContainerMain = styled.div`
   justify-content: center;
 `;
 
+export const FormRow = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+`;
+export const ContainerInputs = styled.div`
+  display: flex;
+  margin-top: 3rem;
+  gap: 2rem;
+`;
+
+export const ContentOne = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+`;
+
+export const ContentTwo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+`;
+
+export const ContainerTextArea = styled.div`
+  margin: 2.4rem 0 2.4rem;
+
+  textarea {
+    width: 100%;
+    height: 16rem;
+    padding: 1.2rem 1.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.8rem;
+    color: #9b9b9b;
+  }
+`;
+
 export const ContainerForm = styled.div`
   ${({ theme }) => css`
     border: 1px solid red;
@@ -36,25 +76,25 @@ export const ContainerForm = styled.div`
     @media (max-width: 510px) {
       width: 85%;
     }
-  `};
-`;
+  `}
 
-export const ContainerTextArea = styled.div`
-  margin: 2.4rem 0 2.4rem;
+  .input-error {
+    border-color: red;
+  }
 
-  textarea {
-    width: 100%;
-    height: 16rem;
-    padding: 1.2rem 1.6rem;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 8px;
-    outline: none;
-    font-size: 1.8rem;
-    color: #9b9b9b;
+  .error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+
+  .disabled-btn {
+    cursor: not-allowed;
+    background: #242428;
   }
 `;
 
-export const Form = styled.form`
+export const FormContact = styled.div`
   width: 100%;
 
   p {
@@ -74,32 +114,5 @@ export const Form = styled.form`
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     outline: none;
-  }
-`;
-
-export const ContainerInputs = styled.div`
-  display: flex;
-  margin-top: 3rem;
-  gap: 2rem;
-`;
-
-export const ContentOne = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 50%;
-
-  label {
-    display: none;
-  }
-`;
-export const ContentTwo = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 50%;
-
-  label {
-    display: none;
   }
 `;
