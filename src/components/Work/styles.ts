@@ -4,12 +4,11 @@ export const ContainerWork = styled.div`
   ${() => css`
     max-width: 140rem;
     margin: 0 auto;
-    padding: 10rem 0 10rem;
+    padding: 10rem 2rem;
 
     h1 {
       font-weight: 400;
       font-size: 4.8rem;
-      line-height: 6.4rem;
       color: #242428;
       margin-bottom: 5rem;
     }
@@ -17,6 +16,12 @@ export const ContainerWork = styled.div`
     @media (max-width: 930px) {
       h1 {
         text-align: center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 3.3rem;
       }
     }
   `}

@@ -10,7 +10,7 @@ export const StylesHome = styled.div`
 export const ContainerHome = styled.div`
   ${() => css`
     max-width: 140rem;
-    padding-top: 20rem;
+    padding: 20rem 2rem 0 2rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -52,16 +52,27 @@ export const ContainerHome = styled.div`
       }
 
       h1 {
-        font-size: 5.2rem;
+        font-size: 4.2rem;
       }
     }
-    @media (max-width: 500px) 
+
+    @media (max-width: 500px) {
       h1 {
         font-size: 3.2rem;
       }
 
       p {
         font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      p {
+        font-size: 1.6rem;
       }
     }
   `}

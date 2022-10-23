@@ -10,7 +10,7 @@ export const StylesClients = styled.div`
 export const ContainerClients = styled.div`
   max-width: 140rem;
   margin: 0 auto;
-  padding: 10rem 0 5rem;
+  padding: 10rem 2rem 5rem 2rem;
 
   h4 {
     font-size: 2.4rem;
@@ -27,6 +27,10 @@ export const ContainerClients = styled.div`
 
   p {
     font-size: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    text-align: center;
   }
 `;
 

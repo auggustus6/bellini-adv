@@ -26,6 +26,10 @@ export const CardBlog = styled.div`
   @media (max-width: 1048px) {
     max-width: 36rem;
   }
+
+  @media (max-width: 500px) {
+    max-width: 26rem;
+  }
 `;
 
 export const Content = styled.div`

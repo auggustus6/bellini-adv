@@ -90,7 +90,6 @@ export const ContainerTextArea = styled.div`
 
 export const ContainerForm = styled.div`
   ${({ theme }) => css`
-    border: 1px solid red;
     max-width: 66rem;
     text-align: center;
     margin-top: -5rem;

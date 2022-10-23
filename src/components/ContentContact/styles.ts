@@ -12,7 +12,7 @@ export const ContainerContact = styled.div`
     max-width: 140rem;
     width: 100%;
     margin: 0 auto;
-    padding: 10rem 0 10rem;
+    padding: 10rem 2rem;
 
     h4 {
       color: ${theme.colors.white};

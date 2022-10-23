@@ -58,4 +58,5 @@ export const ContainerCopy = styled.div`
   padding: 3rem 0 3rem;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
   margin-top: 3rem;
+  text-align: center;
 `;

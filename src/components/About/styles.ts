@@ -16,7 +16,7 @@ export const ContainerAbout = styled.div`
     justify-content: center;
     display: flex;
     gap: 5rem;
-    padding: 10rem 0 10rem;
+    padding: 10rem 2rem;
   `}
 
   img {
