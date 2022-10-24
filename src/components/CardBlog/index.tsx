@@ -1,4 +1,5 @@
 import * as Styles from "./styles";
+import Image from "next/image";
 
 interface PropsCardBlog {
   img: string;
@@ -9,7 +10,7 @@ interface PropsCardBlog {
 const CardBlog = ({ img, title, p }: PropsCardBlog) => {
   return (
     <Styles.CardBlog>
-      <img src={img} alt="" />
+      <Image src={img} width="426" height="260" />
       <Styles.Content>
         <h2>{title}</h2>
       </Styles.Content>

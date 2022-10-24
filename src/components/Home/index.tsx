@@ -1,4 +1,5 @@
 import * as Styles from "./styles";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
           <a href="#">Fazer contato</a>
         </Styles.ContantInfo>
         <Styles.ContantImg>
-          <img src="../../../img/Home.svg" alt="" />
+          <Image src="/img/Home.svg" width="780" height="820" />
         </Styles.ContantImg>
       </Styles.ContainerHome>
     </Styles.StylesHome>

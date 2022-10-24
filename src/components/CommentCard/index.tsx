@@ -1,4 +1,5 @@
 import * as Styles from "./styles";
+import Image from "next/image";
 
 interface PropsCardComment {
   img: string;
@@ -10,7 +11,7 @@ const CommnetCard = ({ img, title, paragraph }: PropsCardComment) => {
   return (
     <Styles.ContainerCard>
       <Styles.TitleContent>
-        <img src={img} alt="" />
+        <Image src={img} width="48" height="48" />
         <h6>{title}</h6>
       </Styles.TitleContent>
       <p>{paragraph}</p>

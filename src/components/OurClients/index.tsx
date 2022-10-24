@@ -32,21 +32,21 @@ const OurClientes = () => {
           <Slider settings={settings}>
             <SwiperSlide>
               <CommnetCard
-                img="../img/card1.svg"
+                img="/img/card1.svg"
                 title="Darlene Robertson"
                 paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
               />
             </SwiperSlide>
             <SwiperSlide>
               <CommnetCard
-                img="../img/card2.svg"
+                img="/img/card2.svg"
                 title="Jacob Jones"
                 paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
               />
             </SwiperSlide>
             <SwiperSlide>
               <CommnetCard
-                img="../img/card3.svg"
+                img="/img/card3.svg"
                 title="Esther Howard"
                 paragraph="Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
               Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum."
@@ -54,7 +54,7 @@ const OurClientes = () => {
             </SwiperSlide>
             <SwiperSlide>
               <CommnetCard
-                img="../img/card4.svg"
+                img="/img/card4.svg"
                 title="Esther Howard"
                 paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
               />

@@ -1,4 +1,5 @@
 import * as Styles from "./styles";
+import Image from "next/image";
 
 interface PropsCard {
   img: string;
@@ -10,7 +11,7 @@ const CardWork = ({ img, title, p }: PropsCard) => {
   return (
     <Styles.Card>
       <Styles.CardContent>
-        <img src={img} alt="" />
+        <Image src={img} width="64" height="64" />
         <h3>{title}</h3>
         <p>{p}</p>
         <a href="#">Saiba Mais</a>

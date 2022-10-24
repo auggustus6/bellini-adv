@@ -1,10 +1,11 @@
 import * as Styles from "./styles";
+import Image from "next/image";
 
 const About = () => {
   return (
     <Styles.StylesAbout>
       <Styles.ContainerAbout>
-        <img src="../../../img/laura.svg" alt="" />
+        <Image src="/img/laura.svg" width="621" height="696" />
         <Styles.ContentAbout>
           <h4>Minha história</h4>
           <h1>Sobre mim</h1>

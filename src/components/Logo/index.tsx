@@ -1,10 +1,11 @@
 import React from "react";
 import * as Styles from "../Logo/styles";
+import Image from "next/image";
 
 const Logo = () => {
   return (
     <Styles.Logo>
-      <img src="../img/LogoAdv.svg" alt="Logomarca" />
+      <Image src="/img/LogoAdv.svg" width="200" height="60" />
     </Styles.Logo>
   );
 };

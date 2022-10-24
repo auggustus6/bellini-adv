@@ -24,11 +24,7 @@ export const CardContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    img {
-      width: 6rem;
-      height: 6rem;
-    }
+    align-items: flex-start;
 
     h3 {
       margin: 2.4rem 0 2.4rem;
