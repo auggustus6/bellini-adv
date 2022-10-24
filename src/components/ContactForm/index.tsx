@@ -11,7 +11,7 @@ const ContactForm = () => {
     email: Yup.string()
       .email("Por favor insira um e-mail válido")
       .required("Email obrigatório"),
-    phoneNumber: Yup.string().required("Telefone obrigatório"),
+    phoneNumber: Yup.string().required("Informe um número"),
   });
 
   interface FormValues {
@@ -43,6 +43,7 @@ const ContactForm = () => {
     console.log(phone);
     setPhoneNumberState(phone);
   }
+
   return (
     <Formik
       initialValues={initialValues}
@@ -57,6 +58,8 @@ const ContactForm = () => {
             message: "",
           },
         });
+        values.phoneNumber = phoneNumberState;
+        setPhoneNumberState("");
         console.log(values);
       }}
     >
@@ -99,7 +102,7 @@ const ContactForm = () => {
                           type="text"
                           name="phoneNumber"
                           value={phoneNumberState}
-                          maxlength="15"
+                          maxLength="15"
                           id="phoneNumber"
                           className={
                             errors.phoneNumber && touched.phoneNumber
@@ -169,8 +172,8 @@ const ContactForm = () => {
                   </Styles.ContainerTextArea>
                   <button
                     type="submit"
-                    /*                     className={!(dirty && isValid) ? "disabled-btn" : ""}
-                    disabled={!(dirty && isValid)} */
+                    className={!(dirty && isValid) ? "disabled-btn" : ""}
+                    disabled={!(dirty && isValid)}
                   >
                     Solicitar agora
                   </button>
