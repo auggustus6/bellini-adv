@@ -11,7 +11,7 @@ const ContactForm = () => {
     email: Yup.string()
       .email("Por favor insira um e-mail válido")
       .required("Email obrigatório"),
-    phoneNumber: Yup.string().required("Informe um número"),
+    phoneNumber: Yup.string(),
   });
 
   interface FormValues {
@@ -30,7 +30,7 @@ const ContactForm = () => {
     message: "",
   };
 
-  function phoneNumber(phone: any) {
+  function phoneNumber(phone: string) {
     phone = phone.replace(/[^\d]/g, "");
 
     if (phone.length > 2) {
@@ -99,10 +99,10 @@ const ContactForm = () => {
                             phoneNumber(String(e.target.value))
                           }
                           placeholder="Telefone*"
-                          type="text"
+                          type="phone"
                           name="phoneNumber"
                           value={phoneNumberState}
-                          maxLength="15"
+                          /* maxLength="15" */
                           id="phoneNumber"
                           className={
                             errors.phoneNumber && touched.phoneNumber
