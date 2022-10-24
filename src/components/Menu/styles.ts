@@ -1,4 +1,10 @@
 import styled, { css } from "styled-components";
+import { fromBottomMenu } from "../../styles/Keyframes/Keyframes";
+
+export const Teste = styled.div`
+  animation-name: ${fromBottomMenu};
+  animation-duration: 2.5s;
+`;
 
 export const Nav = styled.nav`
   ${({ theme }) => css`

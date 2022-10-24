@@ -1,9 +1,28 @@
 import styled, { css } from "styled-components";
 import theme from "../../styles/theme";
+import {
+  fadeOpacityLeft,
+  fadeOpacityRight,
+} from "../../styles/Keyframes/Keyframes";
 
 export const StylesHome = styled.div`
   ${() => css`
     background: ${theme.colors.colorHome};
+
+    &.active img {
+      animation-name: ${fadeOpacityRight};
+      animation-duration: 1.5s;
+    }
+
+    &.active h1 {
+      animation-name: ${fadeOpacityLeft};
+      animation-duration: 1.5s;
+    }
+
+    &.active p {
+      animation-name: ${fadeOpacityLeft};
+      animation-duration: 1.5s;
+    }
   `}
 `;
 
