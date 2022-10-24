@@ -1,33 +1,48 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import * as Styles from "./styles";
-
-const contactInSchema = Yup.object().shape({
-  name: Yup.string().required("Nome obrigatório"),
-  message: Yup.string().required("Envie uma mensagem"),
-  email: Yup.string()
-    .email("Por favor insira um e-mail válido")
-    .required("Email obrigatório"),
-  phoneNumber: Yup.string().required("Telefone obrigatório"),
-});
-
-interface FormValues {
-  name: string;
-  phoneNumber: string;
-  email: string;
-  civil: string;
-  message: string;
-}
-
-const initialValues: FormValues = {
-  name: "",
-  phoneNumber: "",
-  email: "",
-  civil: "",
-  message: "",
-};
+import { useState } from "react";
 
 const ContactForm = () => {
+  const [phoneNumberState, setPhoneNumberState] = useState("");
+  const contactInSchema = Yup.object().shape({
+    name: Yup.string().required("Nome obrigatório"),
+    message: Yup.string().required("Envie uma mensagem"),
+    email: Yup.string()
+      .email("Por favor insira um e-mail válido")
+      .required("Email obrigatório"),
+    phoneNumber: Yup.string().required("Telefone obrigatório"),
+  });
+
+  interface FormValues {
+    name: string;
+    phoneNumber: string;
+    email: string;
+    civil: string;
+    message: string;
+  }
+
+  const initialValues: FormValues = {
+    name: "",
+    phoneNumber: "",
+    email: "",
+    civil: "",
+    message: "",
+  };
+
+  function phoneNumber(phone: any) {
+    phone = phone.replace(/[^\d]/g, "");
+
+    if (phone.length > 2) {
+      phone = phone.replace(/^(\d{2})(\d*)/, "($1) $2");
+    }
+    if (phone.length > 9) {
+      phone = phone.replace(/^(.*)(\d{4})$/, "$1-$2");
+    }
+
+    console.log(phone);
+    setPhoneNumberState(phone);
+  }
   return (
     <Formik
       initialValues={initialValues}
@@ -77,9 +92,14 @@ const ContactForm = () => {
                       </Styles.FormRow>
                       <Styles.FormRow>
                         <Field
+                          onChange={(e: any) =>
+                            phoneNumber(String(e.target.value))
+                          }
                           placeholder="Telefone*"
                           type="text"
                           name="phoneNumber"
+                          value={phoneNumberState}
+                          maxlength="15"
                           id="phoneNumber"
                           className={
                             errors.phoneNumber && touched.phoneNumber
@@ -149,8 +169,8 @@ const ContactForm = () => {
                   </Styles.ContainerTextArea>
                   <button
                     type="submit"
-                    className={!(dirty && isValid) ? "disabled-btn" : ""}
-                    disabled={!(dirty && isValid)}
+                    /*                     className={!(dirty && isValid) ? "disabled-btn" : ""}
+                    disabled={!(dirty && isValid)} */
                   >
                     Solicitar agora
                   </button>
