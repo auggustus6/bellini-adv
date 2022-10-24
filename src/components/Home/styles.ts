@@ -10,7 +10,7 @@ export const StylesHome = styled.div`
 export const ContainerHome = styled.div`
   ${() => css`
     max-width: 140rem;
-    padding: 20rem 2rem 0 2rem;
+    padding: 10rem 2rem 0 2rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;

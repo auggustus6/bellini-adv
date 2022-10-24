@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <Styles.StylesHome>
+    <Styles.StylesHome id="home">
       <Styles.ContainerHome>
         <Styles.ContantInfo>
           <h1>Vou jogar pedra em todos os agressor de dog.</h1>

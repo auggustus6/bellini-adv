@@ -11,6 +11,7 @@ export const ContainerWork = styled.div`
       font-size: 4.8rem;
       color: #242428;
       margin-bottom: 5rem;
+      padding-top: 1rem;
     }
 
     @media (max-width: 930px) {

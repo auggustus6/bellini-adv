@@ -19,7 +19,7 @@ const OurClientes = () => {
   };
 
   return (
-    <Styles.StylesClients>
+    <Styles.StylesClients id="culture">
       <Styles.ContainerClients>
         <h4>Com a palavra</h4>
         <h1>Nossos Clientes</h1>

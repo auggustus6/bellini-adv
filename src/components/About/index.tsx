@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <Styles.StylesAbout>
+    <Styles.StylesAbout id="about">
       <Styles.ContainerAbout>
         <Image src="/img/laura.svg" width="621" height="696" />
         <Styles.ContentAbout>

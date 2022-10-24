@@ -7,19 +7,19 @@ const Menu = ({ expanded }: IconMenuProps) => {
     <Styles.Nav className={expanded ? "active" : ""}>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#">Sobre mim</a>
+          <a href="#about">Sobre mim</a>
         </li>
         <li>
-          <a href="#">Serviços</a>
+          <a href="#services">Serviços</a>
         </li>
         <li>
-          <a href="#">Cultural</a>
+          <a href="#culture">Cultural</a>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
     </Styles.Nav>

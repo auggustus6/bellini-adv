@@ -50,6 +50,7 @@ const GlobalStyles: GlobalStyleComponent<
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
     ${({ theme }) => css` body {
