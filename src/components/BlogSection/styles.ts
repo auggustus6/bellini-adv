@@ -5,9 +5,9 @@ export const StylesBlog = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.colorAbout};
     &.active {
-    animation-name: ${fromBottomMenu};
-    animation-duration: 1.5s;
-  }
+      animation-name: ${fromBottomMenu};
+      animation-duration: 1.5s;
+    }
   `}
 `;
 
