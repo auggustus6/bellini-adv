@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import theme from "../../styles/theme";
-import { fromBottom } from "../../styles/Keyframes/Keyframes";
+import { fromBottomMenu } from "../../styles/Keyframes/Keyframes";
 
 export const StylesContact = styled.div`
   ${() => css`
@@ -15,18 +15,8 @@ export const ContainerContact = styled.div`
     margin: 0 auto;
     padding: 10rem 2rem;
 
-    &.active h4 {
-      animation-name: ${fromBottom};
-      animation-duration: 1.5s;
-    }
-
-    &.active h1 {
-      animation-name: ${fromBottom};
-      animation-duration: 1.5s;
-    }
-
-    &.active p {
-      animation-name: ${fromBottom};
+    &.active {
+      animation-name: ${fromBottomMenu};
       animation-duration: 1.5s;
     }
 

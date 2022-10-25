@@ -1,9 +1,6 @@
 import styled, { css } from "styled-components";
 import theme from "../../styles/theme";
-import {
-  fadeOpacityLeft,
-  fadeOpacityRight,
-} from "../../styles/Keyframes/Keyframes";
+import { fromBottomMenu } from "../../styles/Keyframes/Keyframes";
 
 export const StylesAbout = styled.div`
   ${() => css`
@@ -40,23 +37,8 @@ export const ContentAbout = styled.div`
   align-items: flex-start;
   justify-content: center;
 
-  &.active h4 {
-    animation-name: ${fadeOpacityRight};
-    animation-duration: 1.5s;
-  }
-
-  &.active h1 {
-    animation-name: ${fadeOpacityRight};
-    animation-duration: 1.5s;
-  }
-
-  &.active p {
-    animation-name: ${fadeOpacityRight};
-    animation-duration: 1.5s;
-  }
-
-  &.active a {
-    animation-name: ${fadeOpacityRight};
+  &.active {
+    animation-name: ${fromBottomMenu};
     animation-duration: 1.5s;
   }
 

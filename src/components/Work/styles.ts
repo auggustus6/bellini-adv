@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fadeOpacityRight } from "../../styles/Keyframes/Keyframes";
+import { fromBottomMenu } from "../../styles/Keyframes/Keyframes";
 
 export const ContainerWork = styled.div`
   ${() => css`
@@ -7,8 +7,8 @@ export const ContainerWork = styled.div`
     margin: 0 auto;
     padding: 10rem 2rem;
 
-    &.active h1 {
-      animation-name: ${fadeOpacityRight};
+    &.active {
+      animation-name: ${fromBottomMenu};
       animation-duration: 1.5s;
     }
 
