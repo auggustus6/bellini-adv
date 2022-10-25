@@ -1,17 +1,28 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import * as Styles from "./styles";
-import { useState } from "react";
+
+const phoneNumber = (phone: string) => {
+  phone = phone.replace(/[^\d]/g, "");
+
+  if (phone.length > 2) {
+    phone = phone.replace(/^(\d{2})(\d*)/, "($1) $2");
+  }
+  if (phone.length > 9) {
+    phone = phone.replace(/^(.*)(\d{4})$/, "$1-$2");
+  }
+
+  return phone;
+};
 
 const ContactForm = () => {
-  const [phoneNumberState, setPhoneNumberState] = useState("");
   const contactInSchema = Yup.object().shape({
     name: Yup.string().required("Nome obrigatório"),
     message: Yup.string().required("Envie uma mensagem"),
     email: Yup.string()
       .email("Por favor insira um e-mail válido")
       .required("Email obrigatório"),
-    phoneNumber: Yup.string(),
+    phoneNumber: Yup.string().required("Teste"),
   });
 
   interface FormValues {
@@ -30,20 +41,6 @@ const ContactForm = () => {
     message: "",
   };
 
-  function phoneNumber(phone: string) {
-    phone = phone.replace(/[^\d]/g, "");
-
-    if (phone.length > 2) {
-      phone = phone.replace(/^(\d{2})(\d*)/, "($1) $2");
-    }
-    if (phone.length > 9) {
-      phone = phone.replace(/^(.*)(\d{4})$/, "$1-$2");
-    }
-
-    console.log(phone);
-    setPhoneNumberState(phone);
-  }
-
   return (
     <Formik
       initialValues={initialValues}
@@ -58,13 +55,11 @@ const ContactForm = () => {
             message: "",
           },
         });
-        values.phoneNumber = phoneNumberState;
-        setPhoneNumberState("");
         console.log(values);
       }}
     >
       {(formik) => {
-        const { errors, touched, isValid, dirty } = formik;
+        const { errors, touched, isValid, dirty, setFieldValue } = formik;
         return (
           <Styles.ContainerMain>
             <Styles.ContainerForm>
@@ -95,14 +90,16 @@ const ContactForm = () => {
                       </Styles.FormRow>
                       <Styles.FormRow>
                         <Field
-                          onChange={(e: any) =>
-                            phoneNumber(String(e.target.value))
-                          }
+                          onChange={(
+                            e: React.ChangeEvent<HTMLInputElement>,
+                          ) => {
+                            const mask = phoneNumber(String(e.target.value));
+                            setFieldValue("phoneNumber", mask);
+                          }}
                           placeholder="Telefone*"
                           type="phone"
                           name="phoneNumber"
-                          value={phoneNumberState}
-                          /* maxLength="15" */
+                          maxLength="15"
                           id="phoneNumber"
                           className={
                             errors.phoneNumber && touched.phoneNumber

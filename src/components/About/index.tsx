@@ -1,12 +1,14 @@
 import * as Styles from "./styles";
 import Image from "next/image";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 const About = () => {
+  const elementRef = useAnimateOnScroll();
   return (
     <Styles.StylesAbout id="about">
       <Styles.ContainerAbout>
         <Image src="/img/laura.svg" width="621" height="696" />
-        <Styles.ContentAbout>
+        <Styles.ContentAbout ref={elementRef}>
           <h4>Minha história</h4>
           <h1>Sobre mim</h1>
           <p>

@@ -1,8 +1,19 @@
 import styled, { css } from "styled-components";
+import { fadeOpacityRight } from "../../styles/Keyframes/Keyframes";
 
 export const StylesBlog = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.colorAbout};
+
+    &.active h4 {
+      animation-name: ${fadeOpacityRight};
+      animation-duration: 1.5s;
+    }
+
+    &.active h1 {
+      animation-name: ${fadeOpacityRight};
+      animation-duration: 1.5s;
+    }
   `}
 `;
 

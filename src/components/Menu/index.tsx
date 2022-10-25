@@ -3,29 +3,39 @@ import * as Styles from "../Menu/styles";
 import { IconMenuProps } from "../IconMenu/index";
 import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
-const Menu = ({ expanded }: IconMenuProps) => {
+const Menu = ({ expanded, onClick }: IconMenuProps) => {
   const elementRef = useAnimateOnScroll();
   return (
     <Styles.Nav className={expanded ? "active" : ""}>
-      <Styles.Teste ref={elementRef}>
+      <Styles.List ref={elementRef}>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a onClick={onClick} href="#home">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">Sobre mim</a>
+            <a onClick={onClick} href="#about">
+              Sobre mim
+            </a>
           </li>
           <li>
-            <a href="#services">Serviços</a>
+            <a onClick={onClick} href="#services">
+              Serviços
+            </a>
           </li>
           <li>
-            <a href="#culture">Cultural</a>
+            <a onClick={onClick} href="#culture">
+              Cultural
+            </a>
           </li>
           <li>
-            <a href="#contact">Contato</a>
+            <a onClick={onClick} href="#contact">
+              Contato
+            </a>
           </li>
         </ul>
-      </Styles.Teste>
+      </Styles.List>
     </Styles.Nav>
   );
 };

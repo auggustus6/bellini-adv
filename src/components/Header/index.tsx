@@ -13,7 +13,7 @@ const Header = () => {
       <Container>
         <Styles.Content>
           <Logo />
-          <Menu expanded={isOpen} />
+          <Menu expanded={isOpen} onClick={() => setIsOpen(!isOpen)} />
           <IconMenu onClick={() => setIsOpen(!isOpen)} expanded={isOpen} />
         </Styles.Content>
       </Container>

@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
 import theme from "../../styles/theme";
+import {
+  fadeOpacityLeft,
+  fadeOpacityRight,
+} from "../../styles/Keyframes/Keyframes";
 
 export const StylesAbout = styled.div`
   ${() => css`
@@ -18,6 +22,7 @@ export const ContainerAbout = styled.div`
     gap: 5rem;
     padding: 10rem 2rem;
   `}
+
   img {
     width: 150rem;
   }
@@ -34,6 +39,27 @@ export const ContentAbout = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  &.active h4 {
+    animation-name: ${fadeOpacityRight};
+    animation-duration: 1.5s;
+  }
+
+  &.active h1 {
+    animation-name: ${fadeOpacityRight};
+    animation-duration: 1.5s;
+  }
+
+  &.active p {
+    animation-name: ${fadeOpacityRight};
+    animation-duration: 1.5s;
+  }
+
+  &.active a {
+    animation-name: ${fadeOpacityRight};
+    animation-duration: 1.5s;
+  }
+
   ${() => css`
     h4 {
       color: ${theme.colors.darkBlack};

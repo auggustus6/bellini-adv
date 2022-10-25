@@ -2,10 +2,12 @@ import { Container } from "../Container/styles";
 import * as Styles from "../Footer/styles";
 import MenuFooter from "../MenuFooter";
 import Image from "next/image";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 const Footer = () => {
+  const elementRef = useAnimateOnScroll();
   return (
-    <Styles.Footer>
+    <Styles.Footer ref={elementRef}>
       <Container>
         <Styles.ContainerFooter>
           <Styles.AboutContent>

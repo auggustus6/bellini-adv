@@ -1,9 +1,11 @@
 import * as Styles from "./styles";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 const ContentContact = () => {
+  const elementRef = useAnimateOnScroll();
   return (
     <Styles.StylesContact>
-      <Styles.ContainerContact>
+      <Styles.ContainerContact ref={elementRef}>
         <h4>Somos especialistas</h4>
         <h1>Por que os clientes nos escolhem?</h1>
         <p>

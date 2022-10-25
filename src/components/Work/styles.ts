@@ -1,10 +1,16 @@
 import styled, { css } from "styled-components";
+import { fadeOpacityRight } from "../../styles/Keyframes/Keyframes";
 
 export const ContainerWork = styled.div`
   ${() => css`
     max-width: 140rem;
     margin: 0 auto;
     padding: 10rem 2rem;
+
+    &.active h1 {
+      animation-name: ${fadeOpacityRight};
+      animation-duration: 1.5s;
+    }
 
     h1 {
       font-weight: 400;

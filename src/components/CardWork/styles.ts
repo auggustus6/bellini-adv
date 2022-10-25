@@ -1,8 +1,14 @@
 import styled, { css } from "styled-components";
+import { fromBottom } from "../../styles/Keyframes/Keyframes";
 
 export const Card = styled.div`
   max-width: 31rem;
   display: flex;
+
+  &.active {
+    animation-name: ${fromBottom};
+    animation-duration: 1.5s;
+  }
 
   @media (max-width: 660px) {
     max-width: 20rem;

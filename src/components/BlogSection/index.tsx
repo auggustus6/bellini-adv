@@ -1,9 +1,11 @@
 import CardBlog from "../CardBlog";
 import * as Styles from "./styles";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 const BlogSection = () => {
+  const elementRef = useAnimateOnScroll();
   return (
-    <Styles.StylesBlog>
+    <Styles.StylesBlog ref={elementRef}>
       <Styles.ContainerBlog>
         <h4>Blog da Laurete</h4>
         <h1>Notícias</h1>

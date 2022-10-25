@@ -1,5 +1,6 @@
 import * as Styles from "./styles";
 import Image from "next/image";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 interface PropsCard {
   img: string;
@@ -8,8 +9,9 @@ interface PropsCard {
 }
 
 const CardWork = ({ img, title, p }: PropsCard) => {
+  const elementRef = useAnimateOnScroll();
   return (
-    <Styles.Card>
+    <Styles.Card ref={elementRef}>
       <Styles.CardContent>
         <Image src={img} width="64" height="64" />
         <h3>{title}</h3>

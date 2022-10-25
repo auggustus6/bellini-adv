@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import theme from "../../styles/theme";
+import { fadeOpacityRight } from "../../styles/Keyframes/Keyframes";
 
 export const StylesClients = styled.div`
   ${() => css`
@@ -11,6 +12,11 @@ export const ContainerClients = styled.div`
   max-width: 140rem;
   margin: 0 auto;
   padding: 10rem 2rem 5rem 2rem;
+
+  &.active {
+    animation-name: ${fadeOpacityRight};
+    animation-duration: 1.5s;
+  }
 
   h4 {
     font-size: 2.4rem;

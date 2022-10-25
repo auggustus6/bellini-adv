@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { fromBottomMin } from "../../styles/Keyframes/Keyframes";
 
 export const CardBlog = styled.div`
   display: flex;
@@ -9,6 +10,11 @@ export const CardBlog = styled.div`
   background: #fff;
   border-radius: 8px;
   cursor: pointer;
+
+  &.active {
+    animation-name: ${fromBottomMin};
+    animation-duration: 1.5s;
+  }
 
   img {
     border-radius: 8px 8px 0 0;

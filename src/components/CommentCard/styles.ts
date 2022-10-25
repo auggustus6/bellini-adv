@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { fromBottomMin } from "../../styles/Keyframes/Keyframes";
 
 export const ContainerCard = styled.div`
   max-width: 38rem;
@@ -10,6 +11,11 @@ export const ContainerCard = styled.div`
 `;
 
 export const TitleContent = styled.div`
+  &.active {
+    animation-name: ${fromBottomMin};
+    animation-duration: 1.5s;
+  }
+
   display: flex;
   align-items: center;
   gap: 1.6rem;

@@ -2,6 +2,7 @@ import Slider from "../Slider/Slider";
 import * as Styles from "./styles";
 import { SwiperSlide, SwiperProps } from "swiper/react";
 import CommnetCard from "../CommentCard";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 const OurClientes = () => {
   const settings: SwiperProps = {
@@ -18,9 +19,11 @@ const OurClientes = () => {
     },
   };
 
+  const elementRef = useAnimateOnScroll();
+
   return (
     <Styles.StylesClients id="culture">
-      <Styles.ContainerClients>
+      <Styles.ContainerClients ref={elementRef}>
         <h4>Com a palavra</h4>
         <h1>Nossos Clientes</h1>
         <p>

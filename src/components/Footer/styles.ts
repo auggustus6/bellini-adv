@@ -1,9 +1,15 @@
 import styled, { css } from "styled-components";
+import { fromBottomMenu } from "../../styles/Keyframes/Keyframes";
 
 export const Footer = styled.footer`
   ${({ theme }) => css`
     background-color: ${theme.colors.white};
     color: ${theme.colors.darkBlack};
+
+    &.active {
+      animation-name: ${fromBottomMenu};
+      animation-duration: 1.5s;
+    }
 
     div {
       display: flex;

@@ -1,9 +1,11 @@
 import CardWork from "../../components/CardWork";
 import * as Styles from "./styles";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 const Work = () => {
+  const elementRef = useAnimateOnScroll();
   return (
-    <Styles.ContainerWork id="services">
+    <Styles.ContainerWork id="services" ref={elementRef}>
       <h1>Áreas de Atuação Juridica</h1>
       <Styles.ContainerCard>
         <CardWork

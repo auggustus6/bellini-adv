@@ -8,7 +8,7 @@ const Home = () => {
     <Styles.StylesHome id="home" ref={elementRef}>
       <Styles.ContainerHome>
         <Styles.ContantInfo ref={elementRef}>
-          <h1>Vou jogar pedra em todos os agressor de dog.</h1>
+          <h1>Vou jogar pedra em todos os agressores de dog.</h1>
           <p>Confia na mãe que dá bom.</p>
           <a href="#">Fazer contato</a>
         </Styles.ContantInfo>
