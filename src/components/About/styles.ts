@@ -23,6 +23,7 @@ export const ContainerAbout = styled.div`
   img {
     width: 150rem;
   }
+
   @media (max-width: 980px) {
     flex-direction: column;
     img {
@@ -70,6 +71,7 @@ export const ContentAbout = styled.div`
       font-size: 1.8rem;
       font-weight: 700;
     }
+
     @media (max-width: 980px) {
       align-items: center;
       text-align: center;

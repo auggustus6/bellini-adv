@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import * as Styles from "./styles";
+import Swal from "sweetalert2";
 
 const phoneNumber = (phone: string) => {
   phone = phone.replace(/[^\d]/g, "");
@@ -22,7 +23,7 @@ const ContactForm = () => {
     email: Yup.string()
       .email("Por favor insira um e-mail válido")
       .required("Email obrigatório"),
-    phoneNumber: Yup.string().required("Teste"),
+    phoneNumber: Yup.string().required("Insira um telefone"),
   });
 
   interface FormValues {
@@ -46,6 +47,11 @@ const ContactForm = () => {
       initialValues={initialValues}
       validationSchema={contactInSchema}
       onSubmit={(values: FormValues, { resetForm }) => {
+        Swal.fire(
+          "Formulário Enviado com Sucesso",
+          "Clique no botão para enviar outro formulário",
+          "success",
+        );
         resetForm({
           values: {
             name: "",
