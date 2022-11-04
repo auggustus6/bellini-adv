@@ -52,16 +52,27 @@ const ContactForm = () => {
           "Clique no botão para enviar outro formulário",
           "success",
         );
-        resetForm({
-          values: {
-            name: "",
-            phoneNumber: "",
-            email: "",
-            civil: "",
-            message: "",
+
+        fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
           },
+          body: JSON.stringify(values),
+        }).then((res) => {
+          if (res.status === 200) {
+            resetForm({
+              values: {
+                name: "",
+                phoneNumber: "",
+                email: "",
+                civil: "",
+                message: "",
+              },
+            });
+          }
         });
-        console.log(values);
       }}
     >
       {(formik) => {
@@ -124,7 +135,7 @@ const ContactForm = () => {
                       <Styles.FormRow>
                         <Field
                           type="text"
-                          placeholder="Civil"
+                          placeholder="Processo Civil"
                           name="civil"
                           id="civil"
                           className={

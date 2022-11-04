@@ -16,10 +16,10 @@ const HomeTemplate = () => {
         <Home />
         <Work />
         <About />
-        <ContentContact />
+        {/* <ContentContact /> */}
         <ContactForm />
         <OurClientes />
-        <BlogSection />
+        {/* <BlogSection /> */}
       </Styles.ContainerMain>
     </Layout>
   );

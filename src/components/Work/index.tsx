@@ -10,7 +10,7 @@ const Work = () => {
       <Styles.ContainerCard>
         <CardWork
           img="/img/team.svg"
-          title="Civíl"
+          title="Cívil"
           p="Área do Direito que trata do conjunto de normas nas relações entre pessoas, sejam elas fiscais ou jurídicas."
         />
         <CardWork

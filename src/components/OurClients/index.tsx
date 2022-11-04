@@ -26,18 +26,14 @@ const OurClientes = () => {
       <Styles.ContainerClients ref={elementRef}>
         <h4>Com a palavra</h4>
         <h1>Nossos Clientes</h1>
-        <p>
-          Nosso corpo de advogados é composto por profissionais atenciosos e
-          capacitados a atender casos de consultoria empresarial, fiscal,
-          trabalhista e de contencioso cível com maestria.
-        </p>
+
         <Styles.ContainerSlide>
           <Slider settings={settings}>
             <SwiperSlide>
               <CommnetCard
                 img="/img/card1.svg"
-                title="Darlene Robertson"
-                paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                title="Carlos Augusto - CEO Inicio Design"
+                paragraph="Possuo uma empresa de software e a Dra Laura Bellini atendeu muito bem minhas expectativas, cuidando de todo meus processos contratuais tanto com funcionários como de clientes sempre me resguardando de possíveis problemas."
               />
             </SwiperSlide>
             <SwiperSlide>

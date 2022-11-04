@@ -16,7 +16,7 @@ const CardWork = ({ img, title, p }: PropsCard) => {
         <Image src={img} width="64" height="64" />
         <h3>{title}</h3>
         <p>{p}</p>
-        <a href="#">Saiba Mais</a>
+        {/* <a href="#">Saiba Mais</a> */}
       </Styles.CardContent>
     </Styles.Card>
   );

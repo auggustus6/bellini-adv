@@ -12,17 +12,18 @@ const About = () => {
           <h4>Minha história</h4>
           <h1>Sobre mim</h1>
           <p>
-            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
-            qui esse pariatur duis deserunt mollit dolore cillum minim tempor
-            enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
-            voluptate aute id deserunt nisi.
+            Nascida em 24 de Agosto de 1994, formada em Direito pelo Centro
+            Universitário de Rio Preto (UNIP) com cursos complementares de
+            formação de Direito contratual pela Fundação Getúlio Vargas (FGV).
             <br />
-            <br />
-            Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-            cillum dolor. Voluptate exercitation incididunt aliquip deserunt
-            reprehenderit elit laborum.{" "}
           </p>
-          <a href="#">Saiba mais</a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5517992301031&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Saiba mais
+          </a>
         </Styles.ContentAbout>
       </Styles.ContainerAbout>
     </Styles.StylesAbout>
