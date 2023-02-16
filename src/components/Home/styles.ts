@@ -94,6 +94,10 @@ export const ContainerHome = styled.div`
         font-size: 1.6rem;
       }
     }
+
+    .wrapper-content {
+      flex-direction: column;
+    }
   `}
 `;
 

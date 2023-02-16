@@ -6,7 +6,7 @@ const Work = () => {
   const elementRef = useAnimateOnScroll();
   return (
     <Styles.ContainerWork id="services" ref={elementRef}>
-      <h1>Áreas de Atuação Juridica</h1>
+      <h1>Áreas de Atuação Jurídica</h1>
       <Styles.ContainerCard>
         <CardWork
           img="/img/team.svg"

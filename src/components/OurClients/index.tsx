@@ -8,7 +8,7 @@ const OurClientes = () => {
   const settings: SwiperProps = {
     spaceBetween: 10,
     slidesPerView: 1,
-    loop: true,
+    loop: false,
     breakpoints: {
       500: {
         slidesPerView: 3,
@@ -31,31 +31,26 @@ const OurClientes = () => {
           <Slider settings={settings}>
             <SwiperSlide>
               <CommnetCard
-                img="/img/card1.svg"
                 title="Carlos Augusto - CEO Inicio Design"
-                paragraph="Possuo uma empresa de software e a Dra Laura Bellini atendeu muito bem minhas expectativas, cuidando de todo meus processos contratuais tanto com funcionários como de clientes sempre me resguardando de possíveis problemas."
+                paragraph="Conheci a Dra. Laura Bellini através de um amigo que recomendou seus serviços para resolver um problema envolvendo um contrato de locação. Fiquei impressionado com a atenção e cuidado que ela teve em entender todos os detalhes do meu caso e elaborar um plano de ação claro e eficiente. Sua vasta experiência na área do Direito Civil me deu a confiança que precisava para enfrentar o problema com tranquilidade. O resultado foi melhor do que esperava e eu sou grato pelo seu excelente trabalho."
               />
             </SwiperSlide>
             <SwiperSlide>
               <CommnetCard
-                img="/img/card2.svg"
-                title="Jacob Jones"
-                paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                title="Leticia Souza - Professora Pilates"
+                paragraph="Eu tive o prazer de trabalhar com a Dra. Laura Bellini em um caso complexo envolvendo uma questão de responsabilidade civil. Sua capacidade de análise e sua habilidade em lidar com as complexidades do caso foram impressionantes. Sua comunicação clara e transparente me permitiu entender todo o processo e me sentir seguro em relação às minhas opções. Seu trabalho duro e comprometimento resultaram em um desfecho positivo para mim. Recomendo seus serviços altamente."
               />
             </SwiperSlide>
             <SwiperSlide>
               <CommnetCard
-                img="/img/card3.svg"
-                title="Esther Howard"
-                paragraph="Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-              Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum."
+                title="Solange Soares - Gerente Portobello"
+                paragraph="Eu fui recomendado para a Dra. Laura Bellini para tratar de questões relacionadas à sucessão de um parente falecido. Sua compreensão e empatia com a minha situação foram excepcionais. Ela lidou com todas as questões legais de forma eficiente e com um grande senso de responsabilidade. Sempre disposta a me ouvir e responder a todas as minhas perguntas, ela tornou o processo muito menos estressante do que poderia ter sido. Estou muito agradecido pelo seu trabalho e recomendo seus serviços para qualquer pessoa que precise de ajuda em questões de direito civil."
               />
             </SwiperSlide>
             <SwiperSlide>
               <CommnetCard
-                img="/img/card4.svg"
-                title="Esther Howard"
-                paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                title="Mauricio - CEO Baby Care Shop"
+                paragraph="A Dra. Laura Bellini foi recomendada para mim por um amigo e eu não poderia estar mais satisfeito com seus serviços. Ela foi extremamente atenciosa em entender a minha situação e forneceu aconselhamento jurídico de primeira linha. Sua vasta experiência e conhecimento em Direito Civil foram evidentes em cada etapa do processo e me deram a tranquilidade necessária para enfrentar a situação com confiança. Seu compromisso em alcançar os melhores resultados possíveis foi muito apreciado. Eu definitivamente recomendaria seus serviços a qualquer pessoa que precise de ajuda em questões de direito civil."
               />
             </SwiperSlide>
           </Slider>

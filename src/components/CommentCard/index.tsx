@@ -3,7 +3,7 @@ import Image from "next/image";
 import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 interface PropsCardComment {
-  img: string;
+  img?: string;
   title: string;
   paragraph: string;
 }
@@ -13,7 +13,8 @@ const CommnetCard = ({ img, title, paragraph }: PropsCardComment) => {
   return (
     <Styles.ContainerCard>
       <Styles.TitleContent ref={elementRef}>
-        <Image src={img} width="48" height="48" />
+        {img && <Image src={img} width="48" height="48" />}
+
         <h6>{title}</h6>
       </Styles.TitleContent>
       <p>{paragraph}</p>
